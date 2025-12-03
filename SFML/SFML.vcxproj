@@ -85,6 +85,13 @@
       <AdditionalLibraryDirectories>$(SolutionDir)sfml-dir/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>sfml-system-d.lib;sfml-graphics-d.lib;sfml-audio-d.lib;sfml-network-d.lib;sfml-window-d.lib</AdditionalDependencies>
     </Link>
+    <PostBuildEvent>
+      <Command>xcopy /Y /I /E "$(ProjectDir)audio" "$(OutDir)audio"
+xcopy /Y /I /E "$(ProjectDir)fonts" "$(OutDir)fonts"
+xcopy /Y /I /E "$(ProjectDir)cards" "$(OutDir)cards"
+xcopy /Y /I /E "$(ProjectDir)images" "$(OutDir)images"
+</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -105,6 +112,13 @@
       <AdditionalLibraryDirectories>$(SolutionDir)sfml-dir/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>sfml-system.lib;sfml-graphics.lib;sfml-audio.lib;sfml-network.lib;sfml-window.lib</AdditionalDependencies>
     </Link>
+    <PostBuildEvent>
+      <Command>xcopy /Y /I /E "$(ProjectDir)audio" "$(OutDir)audio"
+xcopy /Y /I /E "$(ProjectDir)fonts" "$(OutDir)fonts"
+xcopy /Y /I /E "$(ProjectDir)cards" "$(OutDir)cards"
+xcopy /Y /I /E "$(ProjectDir)images" "$(OutDir)images"
+</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -121,6 +135,13 @@
       <AdditionalLibraryDirectories>$(SolutionDir)sfml-dir/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>sfml-system-d.lib;sfml-graphics-d.lib;sfml-audio-d.lib;sfml-network-d.lib;sfml-window-d.lib</AdditionalDependencies>
     </Link>
+    <PostBuildEvent>
+      <Command>xcopy /Y /I /E "$(ProjectDir)audio" "$(OutDir)audio"
+xcopy /Y /I /E "$(ProjectDir)fonts" "$(OutDir)fonts"
+xcopy /Y /I /E "$(ProjectDir)cards" "$(OutDir)cards"
+xcopy /Y /I /E "$(ProjectDir)images" "$(OutDir)images"
+</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -141,6 +162,13 @@
       <AdditionalLibraryDirectories>$(SolutionDir)sfml-dir/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>sfml-system.lib;sfml-graphics.lib;sfml-audio.lib;sfml-network.lib;sfml-window.lib</AdditionalDependencies>
     </Link>
+    <PostBuildEvent>
+      <Command>xcopy /Y /I /E "$(ProjectDir)audio" "$(OutDir)audio"
+xcopy /Y /I /E "$(ProjectDir)fonts" "$(OutDir)fonts"
+xcopy /Y /I /E "$(ProjectDir)cards" "$(OutDir)cards"
+xcopy /Y /I /E "$(ProjectDir)images" "$(OutDir)images"
+</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="game.cpp" />
